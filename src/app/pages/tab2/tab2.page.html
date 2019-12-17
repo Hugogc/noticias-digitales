@@ -1,0 +1,31 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title text-center 
+               class="animated lightSpeedIn">
+      <div class="titulo">Noticias por categorías</div>
+    </ion-title>
+  </ion-toolbar>
+  <ion-segment scrollable 
+               mode="md"
+               color="success"
+               (ionChange)="cambioCategoria( $event )">
+    <ion-segment-button mode="md"
+                        *ngFor="let categoria of categorias"      
+                        [value]="categoria">
+      <ion-label class="ion-text-capitalize">{{ categoria | cambioTexto }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content color="dark">
+
+  <app-noticias [noticias]="noticias"></app-noticias>
+
+  <ion-infinite-scroll threshold="100px" 
+                       (ionInfinite)="loadData( $event )">
+      <ion-infinite-scroll-content loadingSpinner="crescent"
+                                   loadingText="Cargando noticias...">
+      </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

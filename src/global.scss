@@ -24,3 +24,148 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+.text-primary {
+    color: var( --ion-color-success ) !important;
+}
+
+
+.noticia-source-name {
+    font-style: oblique;
+    font-size: 1em;
+    color: lightgrey;
+}
+
+.fecha {
+    font-size: 0.8em;
+    position: absolute;
+    right: 12%;
+    top: 7%;
+    color: lightgrey;
+    font-style: oblique;
+}
+
+.action-dark {
+   background-color: var( --ion-color-tarjeta ) !important;
+   color: white !important; 
+}
+
+.action-dark ion-icon {
+    color: white !important;
+}
+
+.tab-selected {
+    color: var( --ion-color-success ) !important;
+}
+
+// Animaciones
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+ion-infinite-scroll-content {
+  --color: white;
+}
+
+.infinite-loading-text {
+  color: white !important;
+}
+
+.titulo {
+  font-size: 1.3em;
+  color: #10dc60;
+}
+
+.tituloTexto {
+  font-size: 1.5em;
+}
