@@ -37,7 +37,7 @@ export class NoticiaComponent implements OnInit {
 
         text: 'Borrar de favoritos',
         icon: 'trash',
-        cssClass: 'action-dark',
+        cssClass: 'action-trash',
         handler: () => {
           this.datalocalService.borrarNoticia( this.noticia );
         }

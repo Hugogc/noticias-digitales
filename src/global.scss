@@ -29,7 +29,7 @@
 
 
 .text-primary {
-    color: var( --ion-color-success ) !important;
+    color: var( --ion-color-personalizado ) !important;
 }
 
 
@@ -57,8 +57,25 @@
     color: white !important;
 }
 
+.action-trash {
+  background-color: var( --ion-color-tarjeta ) !important;
+  color: white !important; 
+}
+
+
+.action-trash ion-icon {
+  color: red !important;
+}
+
 .tab-selected {
-    color: var( --ion-color-success ) !important;
+    color: var( --ion-color-personalizado ) !important;
+}
+
+.salir {
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 1.3em !important;
+  color: var( --ion-color-personalizado ) !important;
 }
 
 // Animaciones
@@ -163,7 +180,7 @@ ion-infinite-scroll-content {
 
 .titulo {
   font-size: 1.3em;
-  color: #10dc60;
+  color: #ff850b;
 }
 
 .tituloTexto {

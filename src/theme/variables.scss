@@ -92,5 +92,28 @@
     --ion-color-tint: var(--ion-color-tarjeta-tint);
   }
 
+ 
+ /** personalizado **/
+ --ion-color-personalizado: #ff850b;
+ --ion-color-personalizado-rgb: 255,133,11;
+ --ion-color-personalizado-contrast: #000000;
+ --ion-color-personalizado-contrast-rgb: 0,0,0;
+ --ion-color-personalizado-shade: #e0750a;
+ --ion-color-personalizado-tint: #ff9123;
+
+ .ion-color-personalizado {
+  --ion-color-base: var(--ion-color-personalizado);
+  --ion-color-base-rgb: var(--ion-color-personalizado-rgb);
+  --ion-color-contrast: var(--ion-color-personalizado-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-personalizado-contrast-rgb);
+  --ion-color-shade: var(--ion-color-personalizado-shade);
+  --ion-color-tint: var(--ion-color-personalizado-tint);
+}
+
+
+
+
+
+
 
 }

@@ -23,9 +23,11 @@ export class AppComponent {
               buttons: [
                 {
                   text: 'No',
-                  role: 'cancel'
+                  role: 'cancel',
+                  cssClass: 'salir'
                 }, {
                   text: 'Si',
+                  cssClass: 'salir',
                   handler: () => {
                     navigator['app'].exitApp();
                   }
